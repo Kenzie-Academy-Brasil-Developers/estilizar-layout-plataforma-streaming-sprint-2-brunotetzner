@@ -16,23 +16,205 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /* VARIÁVEIS */
 :root{
-  
+	--bg-color:#00002E;
+	--bg-color-buttom:#030355;
+	--color-font:white;
+	--font-type:'Helvetica Neue',Helvetica,Arial,sans-serif;;	 
 }
+
 
 /*BODY*/
 	body{
-
+		margin:0px;
+		padding:0px;
+		padding:0px;
+		background-color: var(--bg-color) ;
 	}
 
 /*TOPO*/
-	header.topo{
+/*posicionamento  da logo ('kenzieflix')*/
+
+.topo{
+	display: flex;
+	justify-content: start;
+	align-items: start;
+}
+
+.topo__figure{
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	margin: 0px;
+}
+	
+
+
+/*H3 COLOR*/
+h3{
+	color: var(--color-font);
+	font-family: var(--font-type);
+	}
+
+/*PÁGINA INICIAL*/
+
+section{
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+ul.pg-home--users{
+		
+	list-style-type: none;
+	display: flex;
+		
+	justify-content:center;
+	align-items: center;
+		
+	width: 858px;
+	padding:0px;
+}
+
+	.pg-home--title{
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		color:var(--color-font);
+		font-family: var(--font-type);
+		font-size: 30px;
+	}
+
+	
+	/*EDIÇÃO DA DAS IMAGENS*/
+
+	/*FOTO DO USUÁRIO*/
+	
+	.pg-home--usersbox{
+		
+		width: 186px;
+		height: 250px;
+		margin:1.8%;
+
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	
+	
+	.pg-home--imagens{
+		width: 186px;
+		height: 186px;
+			
+	}
+	.pg-home--imagens:hover{
+		border:2px solid white;
+	}
+
+	
+
+		/*Nvo perfil*/
+
+	.pg-home--newuser{
+		height:250px;
+		width: 186px;
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		
+		
+
+	}
+
+	.pg-home--imagenewperfil{
+		width: 93px;
+		height: 93px;
+		margin-top:50%;
+		
+	}
+	.pg-home--imagenewperfil:hover{
+		border:2px solid white;
+		border-radius:50%;
+	}
+
+	.pg-home-newuser-text{
+		margin-top:36%;
+	}
+	
+
+		
+		
+		
+	/*LOGO KENZIEFLIX*/
+
+		
+	.topo__figure--img{
+		width: 364px;
+		height: 110px;
+	}
+
+	/*RODAPÉ*/
+	.buttom{
+		width: 100%;
+		display:flex;
+		
+		align-items: center;
+		justify-content: center;	
+	}
+
+	.buttom-style{
+		margin-top:5%;
+		font-family: var(--font-type);
+
+		background-color: var(--bg-color);
+		color:var(--color-font);
+
+		width: 200px;
+		height: 70px;
+
+		border: 2px solid var(--color-font);
+		border-radius:5%;	
+
+	}
+
+	.buttom-style:hover{
+	background-color: var(--bg-color-buttom);
+	}
+
+	@media(max-width:800px){
+		
+		/*Ajuste logo('kenzieflix')*/
+		.topo{
+			justify-content: center;
+		}
+		
+		/*Ajuste 'quem está assistindo?'*/
+		h2{
+			font-size:25px;
+			justify-content: center;
+			padding-top:10%;
+			
+		}
+		/*Quebra de linha dos usuários*/
+		ul.pg-home--users{
+		flex-wrap:wrap;
+		}
+
+		.buttom{
+			margin-top:5%;
+		}
+		
 		
 	}
 
-/*RODAPÉ*/
-	
-
-/*PÁGINA INICIAL*/
-	div.pg-home{
-		
+	@media(max-width:500px){
+		ul.pg-home--users{
+			flex-wrap:column;
+			
+			}
+			
+			
 	}

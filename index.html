@@ -9,6 +9,7 @@
 	<title>Kenzieflix</title>
 
 	<!-- CSS -->
+	<link rel = "stylesheet" href = "css/normalize.css">
 	<link rel="stylesheet" href="css/style.css" />
 
 	<!-- FAVICON -->
@@ -18,9 +19,9 @@
 	
 	<!-- CABEÇALHO -->
 	<header class="topo">
-		<figure>
-			<img src="img/logo.png" alt="Kenzieflix">
-			<figcaption>Kenzieflix</figcaption>
+		<figure class = 'topo__figure'>
+			<img class = 'topo__figure--img' src="img/logo.png" alt="Kenzieflix">
+			
 		</figure>
 	</header>
 
@@ -29,57 +30,56 @@
 		
 		<section>
 
-			<header>
+			<header class = 'pg-home--title'>
 				<h2>Quem está assistindo?</h2>
 			</header>
 
 			<!-- LISTA DE USUÁRIOS -->
-			<ul>
+			<ul class = 'pg-home--users'>
 				
 				<!-- USUÁRIO 1 -->
-				<li>
+				<li class = 'pg-home--usersbox'>
 					<figure>
-						<img src="img/avatar.png" alt="Gabriel">
-						<figcaption>Gabriel</figcaption>
+						<img  class = 'pg-home--imagens' src="img/avatar.png" alt="Gabriel">
+						
 					</figure>
 
 					<h3>Gabriel</h3>
 				</li>
 				
 				<!-- USUÁRIO 2 -->
-				<li>
+				<li class = 'pg-home--usersbox'>
 					<figure>
-						<img src="img/avatar1.png" alt="Maria">
-						<figcaption>Maria</figcaption>
+						<img class = 'pg-home--imagens' src = 'img/avatar1.png' alt = 'Maria' >
 					</figure>
 
 					<h3>Maria</h3>
 				</li>
 				
 				<!-- USUÁRIO 3 -->
-				<li>
+				<li class = 'pg-home--usersbox'>
 					<figure>
-						<img src="img/avatar2.png" alt="Renato">
-						<figcaption>Renato</figcaption>
+						<img class = 'pg-home--imagens'  src ="img/avatar2.png" alt="Renato">
+						
 					</figure>
 
 					<h3>Renato</h3>
 				</li>
 
 				<!-- ADICIONAR PERFIL-->
-				<li class="addPerfil">
+				<li  class = 'pg-home--newuser'>
 					<figure>
-						<img src="img/plus-sign.png" alt="Adicionar perfil">
-						<figcaption>Adicionar perfil</figcaption>
+						<img  class = 'pg-home--imagenewperfil'   src="img/plus-sign.png" alt="Adicionar perfil">
+						
 					</figure>
 
-					<h3>Adicionar perfil</h3>
+					<h3 class = 'pg-home-newuser-text'>Adicionar perfil</h3>
 				</li>
 
 			</ul>
 
-			<footer>
-				<button>Gerenciar Perfis</button>
+			<footer class = 'buttom'>
+				<button class= 'buttom-style'>Gerenciar Perfis</button>
 			</footer>
 
 		</section>
